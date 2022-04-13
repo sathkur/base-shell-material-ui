@@ -1,13 +1,19 @@
 import { Outlet } from "react-router-dom";
+import Footer from "./Footer";
 import HeaderMain from "./HeaderMain";
 
 const MainLayout = () => {
     return (
         <>
+            <h2>Cookie Consent</h2>
             <HeaderMain/>
-            <h2>Main Layout</h2>
 
-            <Outlet />
+            <div className="site_content">
+                <h2>Main Layout</h2>
+                <Outlet />
+            </div>
+
+            <Footer />
         </>
     )
 }
